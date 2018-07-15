@@ -1,0 +1,60 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>History of APKB firmware</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body> 
+      <h1>ApertureKB 1.xx</h1>
+      <p>USBデバイスI/F搭載CPU AN2131上に実装(オプティマイズ製基板) キーボードのみ動作</p>
+      <h1>AperturKB 2.xx</h1>
+      <p>HID compositeデバイス化(キーボード/マウス)</p>
+      <h2>2.01</h2>
+      <h2>2.03</h2>
+      <h2>2.04</h2>
+      <h1>APKB3.xx</h1>
+      <p>秋月電子CPUボード上に実装 ターゲット=PIC18F2550</p>
+      <h1>APKB4.xx</h1>
+      <p>自家製CPUボード上に実装 ターゲット=PIC18F2550</p>
+      <h2>4.5</h2>
+      <p>このバージョンよりMPLAB Xに移行</p>
+      <p>EEPROMの運用が煩雑でミスも多いのでEEPROMにキー定義データを置く事を廃止、フラッシュ上に移動した。
+          <br>これによってCDCの必要もなくなる。将来的に排除方向。</p>
+      <h2>4.51</h2>
+      <p>ZOOM時のキーアサインUP/DOWNからLEFT/RIGHTに変更</p>
+      <p>CDCによる設定関数 無効化</p>
+      <h2>4.52</h2>
+      <p>ZOOM時のキーアサインTABからPに変更</p>
+      <h2>4.53</h2>
+      <p>i使わないので/に変更</p>
+      <p>ZOOM時のキーアサインiからALT+4に変更</p>
+      <h2>4.54</h2>
+      <p>USB Descriptor Stringを詳細に変更</p>
+      <p>CDCリソースを削除</p>
+      <h2>4.6 破棄</h2>
+      <p>XC8対応。Microchip Application Library 2014版 対応。</p>
+      <h2>4.55</h2>
+      <p>LED点滅コードが無くなっていたので追加</p>
+      <h2>4.6(再度)</h2>
+      <p>Lightroom対応。Keyboard.h内にLRKBを定義すると、キー定義とUSB descriptorが入れ替わる。</p>
+      <h2>4.61</h2>
+      <p>LRKB時、ズームボタンの動作変更。4モードを持ち、LRのセカンドモニター表示モードに対応</p>
+      <h2>4.62</h2>
+      <p>4モード廃止</p>
+      <h2>4.63</h2>
+      <p>マウスモード時のズーム動作変更。B04でズームイン B06でズームアウト</p>
+      <p>Key modifierを二つ同時に立てると認識されない問題の暫定対処</p>
+      <h2>4.70</h2>
+      <p>Key modifierを二つ同時使った際の処理のまともな実装</p>
+      <p>押されているキーの判断にntz関数を使ってループせず実装した</p>
+      <h2>4.71(廃棄)</h2>
+      <p>C18 Ver3.46に移行</p>
+      <h2>4.72</h2>
+      <p>USB認識動作異常の為C18 Ver3.40に戻す</p>
+
+  </body>
+</html>
